@@ -1,0 +1,32 @@
+[
+  {
+    "uri": "index.php",
+    "alias": "Internet_shopping",
+    "name": "Главная страница",
+    "header": "Главная страница"
+  },
+  {
+    "uri": "product.php",
+	"alias": "2",
+    "name": "Продукты",
+    "header": "Каталог продуктов"
+  },
+  {
+    "uri": "basket.php",
+	"alias": "3",
+    "name": "Корзина",
+    "header": "Корзина продуктов"
+  },
+  {
+    "uri": "login.php",
+	"alias": "4",
+    "name": "Вход на сайт",
+    "header": "Войти"
+  },
+  {
+    "uri": "reg.php",
+	"alias": "5",
+    "name": "Регистрация",
+    "header": "Регистрация"
+  }
+]
