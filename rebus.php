@@ -4,7 +4,7 @@ require_once ("common/page.php");
 require_once ("common/a_content.php");
 
 class rebus {
-    private array $perm; //
+    private array $perm; 
     private string $rebus_str;
     public function __construct(string $str)
     {
