@@ -24,12 +24,14 @@ class page
         ?>
         <!DOCTYPE HTML>
         <html lang="ru"><head>
-            <link rel="stylesheet" type="text/css" href="css/main.css">
+            
             <link href="css/bootstrap.min.css" rel="stylesheet">
 			<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/main.css">
             <script src="js/bootstrap.bundle.min.js"></script>
+			
 			
 			<?php
 			$pi = $this->get_current_page_info();
@@ -54,7 +56,9 @@ class page
     }
 
     private function finish_page(): void
-    {
+    { ?>
+	<script src="js/script.js"></script>
+	<?php
         print("</body></html>");
     }
 
@@ -91,12 +95,12 @@ class page
 		
 ;			if (isset($_SESSION['user'])) {
 			print("<div class='text-primary fs-5  me-1 ps-5 pt-2 text-center'>Здравствуйте,{$_SESSION['user']}</div>");
-			print ("<a href='{$this->pages[3]['uri']}?exit=1' class='btn btn-primary  me-1 fs-5  text-end' role='button'>Выйти</a>");
+			print ("<a href='{$this->pages[3]['uri']}?exit=1' class='btn btn-primary  me-1 fs-5  text-center'  role='button' id ='btn_sign_out'>Выйти</a>");
 			}
 			else {
-				print ("<a href='{$this->pages[3]['uri']}' class='btn btn-primary  fs-5  me-1 text-end' role='button'>{$this->pages[3]['header']}</a>");
+				print ("<a href='{$this->pages[3]['uri']}' class='btn btn-primary  fs-5  me-1 text-center' role='button' id='btn_sign_in'>{$this->pages[3]['header']}</a>");
 			}
-			print ("<a href='{$this->pages[4]['uri']}' class='btn btn-primary   fs-5   text-end me-1' role='button'>{$this->pages[4]['header']}</a>");
+			print ("<a href='{$this->pages[4]['uri']}' class='btn btn-primary   fs-5   text-center me-1' role='button' id='btn_reg'>{$this->pages[4]['header']}</a>");
 	  
 	  
 	  ?>

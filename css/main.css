@@ -8,3 +8,29 @@
     margin: 28px;
     padding: 28px;
 }
+
+#btn_sign_in {
+	transition: width 2s;
+	width:80px;
+}
+
+#btn_reg {
+	transition: width 2s;
+	width:130px;
+}
+
+#btn_sign_out {
+	transition: width 2s;
+	width:80px;
+}
+
+input.filter, input.filter, input.filter, input.filter {
+	border: 5px solid #1809FF;
+}
+
+div.container {
+	display: flex;
+} 
+
+
+

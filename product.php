@@ -294,7 +294,7 @@ print('</div>');
 		<input type='text' name='search' class='form-control ' placeholder='Введите название продукта' value=<?php print (isset($_SESSION['search']))?htmlspecialchars($_SESSION['search']):""; ?>>
 		  </div>
 		 <div class="col-auto"> 
-		<input type="submit" value="Найти" class="btn btn-primary btn-opacity-50"  id="button-addon2" >
+		<input type="submit" value="Найти" class="btn btn-primary btn-opacity-50 "  id="button-addon2" >
 		</div>
 </div>
 </form>	
@@ -357,15 +357,17 @@ for ($i=0;$i<count($selects);$i++) {
 } 
 ?>
 </select>
-</div>			
+</div>	
+<div class = "container">		
 	<div class="col-auto mt-1">
-		<input type="submit" value="Применить" class="btn btn-primary btn-opacity-50"  id="button-addon2" >
-		</div>		
+		<input type="submit" value="Применить" class="btn btn-primary btn-opacity-50 apply"  id="button-addon2" >
+		</div>	
+</div>		
 </div>
 </form>
 <form action="product.php" method="post">
   <input type="hidden" name='reset' value="3">
-  <input type="submit" value="Сбросить" class="btn btn-primary btn-opacity-50 mb-2"  id="button-addon2" >
+  <input type="submit" value="Сбросить" class="btn btn-primary btn-opacity-50 mb-2 "  id="button-addon2" >
   </form>
 
 </div>	
